@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-code",
+  "version": "1.0.0",
+  "description": "simple code for app develpement ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js --exec babel-node --presets es2015,stage-2",
+    "start-eslint": "./node_modules/.bin/eslint ./src/index.js",
+    "eslint-fix": "./node_modules/.bin/eslint ./src/index.js --fix",
+    "babel-node": "babel-node --presets=es2015",
+    "test-mocha": "./node_modules/.bin/mocha --compilers js:babel-core/register "
+  },
+  "keywords": [],
+  "author": "HussainK",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0"
+  }
+}
